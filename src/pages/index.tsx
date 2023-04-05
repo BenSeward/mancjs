@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Lato } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Container } from "@/components/Container";
+import { EventCard } from "@/components/EventCard";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function Home() {
         <Container>
           <Header />
           <h1>Under Construction</h1>
+          <EventCard thumbnailUrl="https://secure.meetupstatic.com/photos/event/9/1/9/3/clean_478597267.jpg" title="Dummy title" eventDate="2023-04-05" eventTime="18:00"/>
         </Container>
       </main>
     </>

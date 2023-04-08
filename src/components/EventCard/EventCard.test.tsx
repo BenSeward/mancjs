@@ -6,7 +6,8 @@ describe('EventCard', () => {
         title: 'My Title',
         thumbnailUrl: '/assets/mancjs-logo.svg',
         eventDate: '2023-04-05',
-        eventTime: '18:00'
+        eventTime: '18:00',
+        location: 'Slalom offices,  M1 ABC'
     }
 
     it('should load', () => {
@@ -41,5 +42,12 @@ describe('EventCard', () => {
 
         expect(eventDate).toBeDefined()
         expect(eventTime).toBeDefined()  
+    })
+
+    it('has a location', () => {
+        const {getByTestId} = render(<EventCard {...dummyProps}/>)
+        const location = getByTestId('card-location')
+
+        expect(location).toBeDefined()
     })
 })

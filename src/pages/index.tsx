@@ -22,7 +22,7 @@ export default function Home() {
         <Container>
           <Header />
           <h1>Under Construction</h1>
-          <EventCard thumbnailUrl="https://secure.meetupstatic.com/photos/event/9/1/9/3/clean_478597267.jpg" title="Dummy title" eventDate="2023-04-05" eventTime="18:00"/>
+          <EventCard thumbnailUrl="https://secure.meetupstatic.com/photos/event/9/1/9/3/clean_478597267.jpg" title="Dummy title" eventDate="2023-04-05" eventTime="18:00" location="Slalom offices,  M1 ABC"/>
         </Container>
       </main>
     </>

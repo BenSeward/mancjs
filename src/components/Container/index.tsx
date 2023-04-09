@@ -1,4 +1,4 @@
-import styles from './Container.module.css'
+import styles from "./Container.module.css"
 
 interface ContainerProps {
     children: JSX.Element | Array<JSX.Element>

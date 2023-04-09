@@ -1,28 +1,33 @@
 import Image from "next/image";
-import {Button} from "../Button"
+import { Button } from "../Button"
+import styles from "./EventCard.module.css"
 
 interface EventCardProps {
-    thumbnailUrl?: string,
-    title: string,
-    eventDate: string,
-    eventTime: string,
-    location: string,
+  thumbnailUrl?: string,
+  title: string,
+  eventDate: string,
+  eventTime: string,
+  location: string,
 }
 
 export const EventCard = ({ thumbnailUrl, title, eventDate, eventTime, location }: EventCardProps) => {
   return (
-    <div>
+    <section className={styles.container}>
+      <div className={(styles.container, styles.cardContainer)}>
         <span><span data-testid='card-date'>{eventDate}</span> - <span data-testid='card-time'>{eventTime}</span></span>
         <h4 data-testid="card-title">{title}</h4>
         <span data-testid='card-location'>{location}</span>
-       { thumbnailUrl && <Image
-        width={200}
-        height={150}
-        src={thumbnailUrl}
-        alt="mancjs logo"
-        data-testid="thumbnail-image"
-      />}
-      <span data-testid="card-button"><Button handleClick={() => console.log('I was clicked')}/></span>
-    </div>
+        <p data-testid="card-button"><Button handleClick={() => console.log('I was clicked')} /></p>
+      </div>
+      <div>
+        {thumbnailUrl && <Image
+          width={200}
+          height={150}
+          src={thumbnailUrl}
+          alt="mancjs logo"
+          data-testid="thumbnail-image"
+        />}
+      </div>
+    </section>
   )
 }

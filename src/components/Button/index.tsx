@@ -1,3 +1,5 @@
+import styles from "./Button.module.css"
+
 interface ButtonProps {
     handleClick: (params: any) => any
 }
@@ -5,8 +7,8 @@ interface ButtonProps {
 export const Button = ({handleClick}: ButtonProps ) => {
    
     return (
-        <button data-testid="button" onClick={handleClick}>
-            Test
+        <button className={styles.buttonStyle} role="button" data-testid="button" onClick={handleClick}>
+            Join our next event!
         </button>
     )
 }

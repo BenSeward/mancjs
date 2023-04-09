@@ -1,11 +1,12 @@
 import Image from "next/image";
+import {Button} from "../Button"
 
 interface EventCardProps {
     thumbnailUrl?: string,
     title: string,
     eventDate: string,
     eventTime: string,
-    location: string
+    location: string,
 }
 
 export const EventCard = ({ thumbnailUrl, title, eventDate, eventTime, location }: EventCardProps) => {
@@ -21,6 +22,7 @@ export const EventCard = ({ thumbnailUrl, title, eventDate, eventTime, location 
         alt="mancjs logo"
         data-testid="thumbnail-image"
       />}
+      <span data-testid="card-button"><Button handleClick={() => console.log('I was clicked')}/></span>
     </div>
   )
 }

@@ -50,4 +50,11 @@ describe('EventCard', () => {
 
         expect(location).toBeDefined()
     })
+
+    it('has a button', () => {
+        const {getByTestId} = render(<EventCard {...dummyProps}/>)
+        const button = getByTestId('card-button')
+
+        expect(button).toBeDefined()
+    })
 })

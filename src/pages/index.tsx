@@ -3,6 +3,7 @@ import { Lato } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Container } from "@/components/Container";
 import { EventCard } from "@/components/EventCard";
+import { Hero } from "@/components/Hero";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -21,8 +22,10 @@ export default function Home() {
       <main className={lato.className}>
         <Container>
           <Header />
-          <h1>Under Construction</h1>
+          <Hero header={'Welcome to Manc.JS'} paragraph={'We run Javascript & tech events every-other month around central Manchester.'} buttonText={'Join our next event!'}/>
+          <h3>Next event</h3>
           <EventCard thumbnailUrl="https://secure.meetupstatic.com/photos/event/9/1/9/3/clean_478597267.jpg" title="🎉 Manc.JS - 10th Birthday party 🎉" eventDate="Wednesday, 22nd March - " eventTime="6:00 PM GMT" location="Slalom offices,  M1 ABC"/>
+          <h3>Previous events</h3>
         </Container>
       </main>
     </>

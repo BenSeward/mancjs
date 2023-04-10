@@ -1,4 +1,4 @@
-import { findByTestId, render } from "@testing-library/react"
+import { render } from "@testing-library/react"
 import { EventCard } from "."
 
 describe('EventCard', () => {
@@ -57,4 +57,6 @@ describe('EventCard', () => {
 
         expect(button).toBeDefined()
     })
+
+    // What test can we write to check whether the component renders correctly? I've updated the Button component to accept a new prop and none of these tests here throw an error?
 })

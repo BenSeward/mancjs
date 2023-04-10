@@ -1,9 +1,11 @@
 import { render } from "@testing-library/react"
 import userEvent from "@testing-library/user-event"
 import { Button } from "."
+import { stringify } from "querystring"
 
 describe('Button', () => {
     const dummyProps = {
+        text: 'Join our next event!',
         handleClick: jest.fn(() => true)
     }
     

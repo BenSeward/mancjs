@@ -1,10 +1,16 @@
 .container {
     display: flex;
     justify-content: space-between;
-    border: 0.5px gray solid;
+    border: 0.5px #D9D9D9 solid;
     padding: 5%;
 }
 
 .cardContainer {
     flex-direction: column;
+}
+
+.dateAndTime {
+    color: #60C9E7;
+    font-size: 16px;
+    font-weight: 400;
 }

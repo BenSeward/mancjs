@@ -14,7 +14,7 @@ export const EventCard = ({ thumbnailUrl, title, eventDate, eventTime, location 
   return (
     <section className={styles.container}>
       <div className={(styles.container, styles.cardContainer)}>
-        <span><span data-testid='card-date'>{eventDate}</span> - <span data-testid='card-time'>{eventTime}</span></span>
+        <span className={styles.dateAndTime}><span data-testid='card-date'>{eventDate}</span> - <span data-testid='card-time'>{eventTime}</span></span>
         <h4 data-testid="card-title">{title}</h4>
         <span data-testid='card-location'>{location}</span>
         <p data-testid="card-button"><Button handleClick={() => console.log('I was clicked')} /></p>

@@ -6,7 +6,7 @@ import { EventCard } from "@/components/EventCard";
 
 const lato = Lato({
   subsets: ["latin"],
-  weight: ["100", "700"],
+  weight: ["100", "300", "400", "700"],
 });
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
         <Container>
           <Header />
           <h1>Under Construction</h1>
-          <EventCard thumbnailUrl="https://secure.meetupstatic.com/photos/event/9/1/9/3/clean_478597267.jpg" title="Dummy title" eventDate="2023-04-05" eventTime="18:00" location="Slalom offices,  M1 ABC"/>
+          <EventCard thumbnailUrl="https://secure.meetupstatic.com/photos/event/9/1/9/3/clean_478597267.jpg" title="🎉 Manc.JS - 10th Birthday party 🎉" eventDate="Wednesday, 22nd March - " eventTime="6:00 PM GMT" location="Slalom offices,  M1 ABC"/>
         </Container>
       </main>
     </>

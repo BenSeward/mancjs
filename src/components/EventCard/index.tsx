@@ -8,16 +8,17 @@ interface EventCardProps {
   eventDate: string,
   eventTime: string,
   location: string,
+  buttonText: string
 }
 
-export const EventCard = ({ thumbnailUrl, title, eventDate, eventTime, location }: EventCardProps) => {
+export const EventCard = ({ thumbnailUrl, title, eventDate, eventTime, location, buttonText }: EventCardProps) => {
   return (
     <section className={styles.container}>
       <div className={(styles.container, styles.cardContainer)}>
         <span className={styles.dateAndTime}><span data-testid='card-date'>{eventDate}</span> - <span data-testid='card-time'>{eventTime}</span></span>
         <h4 data-testid="card-title">{title}</h4>
         <span data-testid='card-location'>{location}</span>
-        <p data-testid="card-button"><Button text={'Join our next event!'} handleClick={() => console.log('I was clicked')}/></p>
+        <p data-testid="card-button"><Button text={buttonText} handleClick={() => console.log('I was clicked')}/></p>
       </div>
       <div>
         {thumbnailUrl && <Image

@@ -7,7 +7,8 @@ describe('EventCard', () => {
         thumbnailUrl: '/assets/mancjs-logo.svg',
         eventDate: '2023-04-05',
         eventTime: '18:00',
-        location: 'Slalom offices,  M1 ABC'
+        location: 'Slalom offices,  M1 ABC',
+        buttonText: 'get in touch'
     }
 
     it('should load', () => {

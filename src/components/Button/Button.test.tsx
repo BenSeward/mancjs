@@ -1,26 +1,29 @@
 import { render } from "@testing-library/react"
-import userEvent from "@testing-library/user-event"
 import { Button } from "."
-import { stringify } from "querystring"
 
 describe('Button', () => {
     const dummyProps = {
         text: 'Join our next event!',
-        handleClick: jest.fn(() => true)
+        link: '/test-url'
     }
-    
-    it('should load', () => {
-        const { getByTestId } = render(<Button {...dummyProps}/>)
-        const bttn = getByTestId('button')
 
-        expect(bttn).toBeDefined()
+    it('should load', () => {
+        const { getByTestId } = render(<Button {...dummyProps} />)
+        const btn = getByTestId('button')
+
+        expect(btn).toBeDefined()
     })
     it('should be clickable', async () => {
-        const user = userEvent.setup()
-        const { getByTestId } = render(<Button {...dummyProps}/>)
-        const bttn = getByTestId('button')
+        const { getByTestId } = render(<Button {...dummyProps} />)
+        const btn = getByTestId('button')
 
-        await user.click(bttn)
-        expect(dummyProps.handleClick).toHaveBeenCalled()
+        expect(btn).toHaveAttribute('href', '/test-url')
+    })
+
+    it('should display button text', async () => {
+        const { getByTestId } = render(<Button {...dummyProps} />)
+        const btn = getByTestId('button')
+
+        expect(btn).toHaveTextContent('Join our next event!')
     })
 })

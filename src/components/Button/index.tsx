@@ -2,14 +2,19 @@ import styles from "./Button.module.css"
 
 interface ButtonProps {
     text: string,
-    handleClick: (params: any) => any    
+    link: string   
 }
 
-export const Button = ({handleClick, text}: ButtonProps ) => {
+// @todo: Add tests for aria labeln and testing when no link or text is provided
+
+export const Button = ({link, text}: ButtonProps ) => {
+   if(!link || !text) {
+    return null
+   }
    
     return (
-        <button className={styles.buttonStyle} role="button" data-testid="button" onClick={handleClick}>
+        <a className={styles.buttonStyle} aria-label="link" data-testid="button" href={link}>
             {text}
-        </button>
+        </a>
     )
 }

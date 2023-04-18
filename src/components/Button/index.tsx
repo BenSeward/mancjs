@@ -11,7 +11,7 @@ export const Button = ({link, text}: ButtonProps ) => {
    if(!link || !text) {
     return null
    }
-   
+
     return (
         <a className={styles.buttonStyle} aria-label="link" data-testid="button" href={link}>
             {text}

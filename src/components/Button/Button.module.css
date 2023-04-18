@@ -1,48 +1,13 @@
 .buttonStyle {
-  background-color: transparent;
-  border: 1px solid #266DB6;
-  box-sizing: border-box;
-  color: #000000;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  padding: 16px 23px;
-  position: relative;
+  background-color: #60C9E7;
   text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.buttonStyle:hover,
-.buttonStyle:active {
-  outline: 0;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  transition: 0.4s ease-in-out;
 }
 
 .buttonStyle:hover {
-  background-color: transparent;
-  cursor: pointer;
-  color: white;
+  background-color: #51aec8;
 }
 
-.buttonStyle:before {
-  background-color: #b9e6f7;
-  content: "";
-  height: calc(100% + 3px);
-  position: absolute;
-  right: -7px;
-  top: -9px;
-  transition: background-color 300ms ease-in;
-  width: 100%;
-  z-index: -1;
-}
-
-.buttonStyle:hover:before {
-  background-color: #6DCFF6;
-}
-
-@media (min-width: 768px) {
-  .buttonStyle {
-    padding: 16px 32px;
-  }
-}

@@ -1,12 +1,12 @@
 import { Button } from "../Button"
 
-interface HeroProps {
+interface SectionProps {
     header: string,
     paragraph: string,
     buttonText: string
 }
 
-export const Hero = ({ header, paragraph, buttonText }: HeroProps) => {
+export const Section = ({ header, paragraph, buttonText }: SectionProps) => {
     return (
         <>
             <h1 data-testid="hero-header">{header}</h1>

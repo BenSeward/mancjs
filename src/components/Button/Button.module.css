@@ -1,7 +1,5 @@
 .buttonStyle {
-  background-color: #60C9E7;
   text-decoration: none;
-  color: white;
   padding: 15px 20px;
   border-radius: 4px;
   transition: 0.4s ease-in-out;
@@ -9,5 +7,19 @@
 
 .buttonStyle:hover {
   background-color: #51aec8;
+}
+
+.primary {
+  background-color: #60C9E7;
+  color: white;
+}
+.secondary {
+  background-color: white;
+  color: #1E1E1E;
+  border: 1px solid #51aec8
+}
+
+.secondary:hover {
+  color: white;
 }
 

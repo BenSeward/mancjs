@@ -26,7 +26,7 @@ export default function Home() {
           <h2>Next event</h2>
           <EventCard thumbnailUrl="https://secure.meetupstatic.com/photos/event/9/1/9/3/clean_478597267.jpg" title="🎉 Manc.JS - 10th Birthday party 🎉" eventDate="Wednesday, 22nd March - " eventTime="6:00 PM GMT" location="Slalom offices,  M1 ABC" buttonText={'Join our next event!'} link={'/'}/>
           <h2>Previous events</h2>
-          <EventCard thumbnailUrl="https://secure.meetupstatic.com/photos/event/9/1/9/3/clean_478597267.jpg" title="🎉 Manc.JS - 10th Birthday party 🎉" eventDate="Wednesday, 22nd March - " eventTime="6:00 PM GMT" location="Slalom offices,  M1 ABC" buttonText={'See event details'} link={'/'}/>
+          <EventCard thumbnailUrl="https://secure.meetupstatic.com/photos/event/9/1/9/3/clean_478597267.jpg" title="🎉 Manc.JS - 10th Birthday party 🎉" eventDate="Wednesday, 22nd March - " eventTime="6:00 PM GMT" location="Slalom offices,  M1 ABC" buttonText={'See event details'} variant="secondary" link={'/'}/>
           <Section header={'Get in touch'} paragraph={'We love hearing from our community. If you want to come to an event but have a question reach out to one of our organisers on Meetup.'} buttonText={'Get in touch'} link={'/'}/>
         </Container>
       </main>

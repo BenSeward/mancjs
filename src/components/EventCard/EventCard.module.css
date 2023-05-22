@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     border: 0.5px #D9D9D9 solid;
+    border-radius: 6px;
     padding: 5%;
+    margin-bottom: 60px;
 }
 
 .cardContainer {
@@ -15,6 +17,10 @@
     font-weight: 400;
 }
 
-h4 {
-   
+.locationHeader {
+    color: #787878;
+}
+
+.locationImage {
+    vertical-align: sub;
 }
